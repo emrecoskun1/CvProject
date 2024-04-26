@@ -10,7 +10,7 @@ namespace Project.ViewComponents.Portfolio
         public IViewComponentResult Invoke()
         {
             var values = portfolioManager.TGetList();
-            return View();
+            return View(values);
         }
     }
 }
